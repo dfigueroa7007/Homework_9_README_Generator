@@ -75,23 +75,23 @@ inquirer
     console.log(error)
   });
 
-// array of questions for user
-// const questions = [
+// // array of questions for user
+// // const questions = [
 
-// ];
+// // ];
 
 // function to write README file
 function writeToFile() {
-  fs.writeFile("README.md", function(err){console.log(err || "File written successfully!")})
+  fs.writeFile("README.md", "", function(err){console.log(err || "File written successfully!")})
 }
 
-// function to initialize program
-function init() {
-  prompt(questions).then(answers => {
-      const response = generateMarkdown(answers);
-      writetoFile("./README.md", response);
-  })
-}
+// // function to initialize program
+// function init() {
+//   prompt(questions).then(answers => {
+//       const response = generateMarkdown(answers);
+//       writetoFile("./README.md", response);
+//   })
+// }
 
-// function call to initialize program
-init();
+// // function call to initialize program
+// init();
